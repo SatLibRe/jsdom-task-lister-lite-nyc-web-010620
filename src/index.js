@@ -2,23 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
   
   let form = document.getElementById("create-task-form")
   let textbox = document.getElementById("new-task-description")
-  // let deleteButtons = document.getElementsByClassName("Delete")
-
 
   form.addEventListener("submit", function(event){
     addItem()
     event.preventDefault()
     textbox.value = ""
   });
-
-  // deleteButtons.addEventListener("click", function(event){
-  //   //delete fucntion will go 
-  //   console.log("I was clicked")
-  //   // textbox.value = ""
-  // });
-
-
-
 
   let list = document.getElementById("tasks")
 
